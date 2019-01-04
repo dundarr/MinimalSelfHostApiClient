@@ -34,7 +34,7 @@ namespace MinimalOwinWebApiClient
             try
             {
                 // Pass in the credentials and retrieve a token dictionary:
-                _tokenDictionary = await provider.GetTokenDictionary("john@example.com", "password");
+                _tokenDictionary = await provider.GetTokenDictionary("john@example.com", "JohnsPassword");
                 _accessToken = _tokenDictionary["access_token"];
 
                 // Write the contents of the dictionary:
